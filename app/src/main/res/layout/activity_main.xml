@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> e3e00f6 (tercer commit)
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:padding="16dp"
     tools:context=".MainActivity">
+=======
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+>>>>>>> e3e00f6 (tercer commit)
 
     <TextView
         android:id="@+id/contadorPulsaciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginStart="164dp"
         android:layout_marginTop="48dp"
+=======
+>>>>>>> e3e00f6 (tercer commit)
         android:text="Contador"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/resetear"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
@@ -51,3 +66,34 @@
         android:onClick="decremetaContador"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:onClick="reseteaContador"
+        android:text="Resetear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/incrementar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="incremetaContador"
+        android:text="Incrementar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contadorPulsaciones"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/decrementar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="decremetaContador"
+        android:text="Decrementar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+>>>>>>> e3e00f6 (tercer commit)
