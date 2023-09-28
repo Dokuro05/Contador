@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.contador"
-    compileSdk = 33
+    compileSdk = 31
 
     defaultConfig {
         applicationId = "com.example.contador"
-        minSdk = 24
-        targetSdk = 33
+        minSdk = 31
+        targetSdk = 31
         versionCode = 1
         versionName = "1.0"
 
@@ -19,7 +19,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
