@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.contador"
-    compileSdk = 31
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.contador"
